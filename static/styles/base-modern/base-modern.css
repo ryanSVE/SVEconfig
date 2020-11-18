@@ -11,12 +11,12 @@
   right: 20px;
 }
 #bannerLogo {
-  position: relative;
-  left: 0;
-  top: -5px;
-  padding-left:5px;
-  height:84px;
-  width:227px;
+    position: relative;
+    left: 5;
+    top: -66;
+    padding-left: 5px;
+    height: 55px;
+    width: 150px;
 }
 #sve-loading {
   display:none;
