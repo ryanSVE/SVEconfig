@@ -1,0 +1,51 @@
+#assembly-selector-ui {
+  left: 0px;
+  top: 45vh;
+  position: absolute;
+  background-image: url("/static/styles/configurator-modern/assembly-selector-background.png");
+  background-size: cover;
+  background-position: right;
+  transition: all .5s;
+  height: 62vh;
+  width: calc(60vh * .60 );
+  margin-top:-30vh;
+  z-index: 2;
+  padding: 10px;
+  padding-right: 25px;
+}
+
+#assembly-selector-title {
+  position: absolute;
+  bottom: 10px;
+  right: 15px;
+}
+
+#assembly-selector-collapse-button {
+  position: absolute;
+  right: 0;
+  top: 45%;
+  margin-right: -40px;
+  width: 80px;
+}
+
+#assembly-selector-ui.collapsed {
+  transform: translateX(-100%);
+}
+
+#assembly-container {
+  margin: 10px;
+}
+
+.assemblies {
+  color: white;
+  border-bottom: 1px solid;
+  text-align: right;
+  padding:5px;
+  padding-right:15px;
+  padding-left:15px;
+  cursor: pointer;
+}
+
+.assemblies:hover {
+  color:black;
+}

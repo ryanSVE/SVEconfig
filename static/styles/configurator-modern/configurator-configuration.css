@@ -1,0 +1,208 @@
+#configurator-configuration-ui {
+  right: 0px;
+  top: 45vh;
+  position: absolute;
+  background-image: url("/static/styles/configurator-modern/configuration-background.png");
+  background-size: cover;
+  transition: linear all .5s;
+  height: 62vh;
+  width: 25vw;
+  min-width: 200px;
+  margin-top:-30vh;
+  z-index: 2;
+  padding-left: 25px;
+  padding-top: 10px;
+}
+#configurator-configuration-title {
+    position: absolute;
+    bottom: 10px;
+    right: 15px;
+}
+#configurator-configuration-ui.collapsed {
+  transform: translateX(100%);
+}
+#configurator-configuration-ui.collapsed >  img {
+  transform: rotate(180deg);
+}
+#configurator-configuration-collapse-button {
+  transition: linear all .5s;
+  position: absolute;
+  left: 0;
+  top: 45%;
+  margin-left: -40px;
+  width: 80px;
+}
+#options-navigator {
+  cursor: pointer;
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+#options-navigator:hover {
+  color:rgb(0, 99, 133);
+}
+#catalog-number-lookup-input {
+  border: 2px solid white;
+  padding: 3px;
+  margin-bottom: 5px;
+}
+#catalog-number-lookup-input::placeholder {
+  color: white;
+  font-style: italic;
+}
+#catalog-number-lookup-container {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+#catalog-number-lookup-btn {
+  cursor: pointer;
+}
+#catalog-number-lookup-btn:hover {
+  color:rgb(0, 99, 133);
+}
+#configurator-controls-section {
+  margin-top: 10px;
+  padding-top: 5px;
+  padding-left: 15px;
+  z-index: 10;
+  height: calc(100% - 75px);
+  overflow: scroll;
+  background: linear-gradient(rgba(50,50,100,0), rgba(100,100,100,0.90));
+  margin-right: 10px;
+  box-shadow: inset 0px -2px 4px 0px rgba(0, 0, 0, 1);
+}
+#configurator-controls-table {
+  width: 80%;
+  margin: 0 auto;
+  border-collapse: collapse;
+  color:white;
+}
+#configurator-controls-table > tbody > tr {
+  border-bottom: 1px white solid;
+}
+#configurator-controls-table > tbody > tr > td {
+  width: 75%;
+}
+.configurator-dropdown-labels {
+  font-size: small;
+}
+#configuration-not-available {
+  display: none;
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  z-index: 2;
+  color: red;
+  font-size: LARGE;
+}
+select {
+  background: none;
+  border: none;
+  color:white;
+}
+select:hover {
+  color: rgb(0, 99, 133);
+}
+option {
+  color:black;
+}
+input {
+  background: transparent;
+  color: white;
+  border: none;
+}
+#assembly-lookup-error {
+  color: red;
+  font-style: italic;
+  visibility: hidden;
+}
+.eto-form-prompt{
+  text-align: center;
+  border: 2px solid white;
+  width: fit-content;
+  margin: auto;
+}
+.eto-form-prompt > p {
+  margin: 5px;
+}
+.eto-form-button {
+  cursor: pointer;
+}
+.eto-form-button:hover {
+  color:rgb(0, 99, 133);
+}
+.eto-links {
+  opacity: 100%;
+  left: 33%;
+  top: 10%;
+  z-index: 99;
+  width: 507px;
+  height: 812px;
+  background-image: url(/static/styles/configurator-modern/configuration-background.png);
+  position: absolute;
+}
+.eto-links-content {
+  height: 92%;
+  width: 93%;
+  margin: auto;
+  margin-top: 20px;
+  background: linear-gradient(rgba(50,50,100,0), rgba(100,100,100,0.90));
+}
+.eto-links-close {
+  color:  white;
+  font-size: medium;
+  cursor: pointer;
+  width: min-content;
+  margin: auto;
+}
+.eto-links-close:hover {
+  color:rgb(0, 99, 133);
+}
+.eto-links-title {
+  position: absolute;
+  right: 15px;
+  bottom: 15px;
+}
+.eto-links-content > ul {
+  padding: 5px;
+}
+.eto-links-content > ul > li {
+  color: white;
+  list-style-type: none;
+  border-bottom: 1px solid white;
+  width: 80%;
+  margin-bottom: 10px;
+}
+.eto-links-content > ul > li > a {
+  color: white;
+  text-decoration: none;
+  font-size: medium;
+  text-shadow: black 0px 0px 6px;
+}
+.eto-links-content > ul > li > a:hover {
+  color: rgb(0, 99, 133);
+}
+
+@media (max-width: 1200px) {
+    .eto-links {
+        left: 25%;
+    }
+
+    .eto-links-content {
+        overflow: scroll;
+    }
+}
+
+@media (max-width: 500px) {
+    .eto-links {
+        left: 12.5%;
+        width: 75%;
+        height: 90%;
+    }
+
+    .eto-links-content {
+        overflow: scroll;
+    }
+}

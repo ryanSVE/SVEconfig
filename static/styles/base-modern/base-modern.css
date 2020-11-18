@@ -1,0 +1,73 @@
+.top-ribbon {
+  width:100%;
+  height:75px;
+  left: 0em;
+  top: 0em;
+  z-index: 4;
+}
+#banner-title {
+  position: absolute;
+  top: 30px;
+  right: 20px;
+}
+#feedback-link {
+  position: absolute;
+  top: 50px;
+  right: 0px;
+  padding-right: 20px;
+  color: white;
+}
+#bannerLogo {
+  position: relative;
+  left: 0;
+  top: -40px;
+  padding-left:5px;
+  height:33px;
+  width:192px;
+}
+#excellerate-loading {
+  display:none;
+  position: absolute;
+  top: 50vh;
+  right: 50vw;
+}
+#login-container {
+  position: absolute;
+  right: 0;
+  top:10px;
+  padding-right: 20px;
+  text-align: right;
+  color: white;
+}
+#login-container > a:link {
+  color: white;
+}
+#login-container > a:visited {
+  color: white;
+}
+#banner {
+  width: 100%;
+  height: 100%;
+}
+html body {
+  display: flex;
+  margin: 0;
+  font-size: small;
+  font-family: 'Rubik', sans-serif;
+  color: white;
+}
+body {
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  width: 100%;
+}
+.collapsing-button {
+  cursor: pointer;
+}
+.clickableSpan {
+  cursor: pointer;
+}
+.shepherd-button {
+  margin: 5px !important;
+}

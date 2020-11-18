@@ -1,0 +1,216 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1, user-scalable=no" />
+    <meta charset="utf-8">
+    <title>Excellerate - Configurator</title>
+    <link rel="icon" type="image/png" href="/static/styles/base-modern/excellerate-logo-icon.png">
+    <link rel="stylesheet" type="text/css" href="/static/styles/base-modern/base-modern.css?v=1.7.0.2">
+    
+<link rel="stylesheet" type="text/css"
+    href="/static/styles/configurator-modern/jquery-ui.min.css">
+<link rel="stylesheet" type="text/css"
+    href="/static/styles/configurator-modern/configurator-assemblies.css?v=1.7.0.2">
+<link rel="stylesheet" type="text/css"
+    href="/static/styles/configurator-modern/configurator-configuration.css?v=1.7.0.2">
+<link rel="stylesheet" type="text/css"
+    href="/static/styles/configurator-modern/configurator-cart.css?v=1.7.0.2">
+<link rel="stylesheet" type="text/css"
+    href="/static/styles/configurator-modern/configurator-viewer.css?v=1.7.0.2">
+<link rel="stylesheet" type="text/css"
+    href="/static/styles/lib/shepherd-theme-default.css?v=1.0">
+<link rel="stylesheet" href="https://developer.api.autodesk.com/modelderivative/v2/viewers/6.*/style.min.css"
+    type="text/css">
+
+  </head>
+  <body>
+      <div class="top-ribbon">
+          <div id="login-container">
+              
+              <a id="login-button" href="/login">Login</a>
+              
+          </div>
+          <span id="banner-title">Assembly Configurator</span>
+          <a id="feedback-link" href="https://faithtechnologies.sharepoint.com/Excellerate/SitePages/ExcellerateConfiguratorFeedback.aspx">
+            Feedback
+          </a>
+          <img id="banner" src="/static/styles/base-modern/excellerate-ribbon.png" alt="">
+          <img id="bannerLogo" src="/static/styles/base-modern/excellerate-ribbon-logo.png">
+          <img id="excellerate-loading" src="/static/styles/base-modern/excellerate-loading.gif">
+      </div>
+      
+<div id="configurator-cart" class="collapsable collapsed">
+    <div id="configurator-cart-table-container">
+        <table id="configurator-cart-table">
+            <thead>
+                <td>QTY</td>
+                <td>Assembly</td>
+                <td>Description</td>
+                <td>Price</td>
+                <td>Remove</td>
+            </thead>
+            <tfoot>
+                
+                
+                <tr>
+                    <td colspan="2"><strong>Company Name</strong></td>
+                    <td colspan="4" id="company-name">
+                        <input class="order-input" type="text" style="width: 100%;"></input>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td colspan="2"><strong>Customer Name</strong></td>
+                    <td colspan="4" id="customer-name">
+                        <input class="order-input" type="text" style="width: 100%;"></input>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td colspan="2"><strong>Phone Number</strong></td>
+                    <td colspan="4" id="customer-phone-number">
+                        <input class="order-input" type="text" style="width: 100%;"></input>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td colspan="2"><strong>Address</strong></td>
+                    <td colspan="4" id="customer-address">
+                        <input class="order-input" type="text" style="width: 100%;"></input>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td colspan="2"><strong>City, State, Zip Code</strong></td>
+                    <td colspan="4" id="customer-location">
+                        <input class="order-input" type="text" style="width: 100%;"></input>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td id="configurator-cart-footer-text">
+                        <strong>Submit for Quote</strong>
+                    </td>
+                </tr>
+                
+            </tfoot>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+    <div id="cart-collapse-title"> OPEN CART</div>
+</div>
+<div id="assembly-selector-ui" class="collapsable collapsed">
+    <img id="assembly-selector-collapse-button" class="collapsing-button"
+        src="/static/styles/configurator-modern/excellerate-logo.png">
+    <div id="assembly-container">
+        
+        
+        <div id="100" class="assemblies assembly-active">
+            Hangers
+        </div>
+        
+        
+        
+        <div id="150" class="assemblies">
+            Conduit
+        </div>
+        
+        
+        
+        <div id="250" class="assemblies">
+            In-Wall Rough-In Box Build Assemblies
+        </div>
+        
+        
+        
+        <div id="300" class="assemblies">
+            Cabling | Wiring
+        </div>
+        
+        
+        
+        <div id="500" class="assemblies">
+            Kitting | Devices
+        </div>
+        
+        
+        
+        <div id="450" class="assemblies">
+            Temp Power
+        </div>
+        
+        
+        
+        <div id="200" class="assemblies">
+            Underground | Duct Bank
+        </div>
+        
+        
+    </div>
+    <span id="assembly-selector-title">Assembly Type Selector</span>
+</div>
+<div id="configuration-viewer-container">
+    <div id="configuration-not-available">Assembly Not Currently Available</div>
+    <div id="configurator-view-section"></div>
+</div>
+<div id="configurator-configuration-ui" class="collapsable">
+    <img id="configurator-configuration-collapse-button" class="collapsing-button"
+        src="/static/styles/configurator-modern/excellerate-logo.png">
+    <div id="configurator-controls-section">
+        <div id="options-navigator">
+            
+            More Options
+            
+        </div>
+        <table id="configurator-controls-table">
+            <tr>
+                <td>UNIT PRICE</td>
+                <td id="cart-unit-price">$0.00</td>
+            </tr>
+            <tr>
+                <td>QUANTITY</td>
+                <td>
+                    <input id="cart-unit-qty" class="configurator-controls-dropdowns" type="text" value="0" min="0"
+                        step="1" />
+                </td>
+            </tr>
+            <tr>
+                <td>EXTENDED PRICE</td>
+                <td id="cart-extended-price">$0.00</td>
+            </tr>
+        </table>
+        <div id="configurator-controls-footer">Add Item To Cart</div>
+        <div id="catalog-number-lookup-container">
+            <input id="catalog-number-lookup-input" type="text" placeholder="Catalog Number..">
+            <div id="catalog-number-lookup-btn">
+                Lookup Assembly
+            </div>
+            <div id="assembly-lookup-error">*Assembly Does Not Exist</div>
+        </div>
+        
+        
+    </div>
+    <span id="configurator-configuration-title">Type Option Selector</span>
+</div>
+
+
+<div id="order-confirmation">
+    Your submission has been sent and will be processed. Thank you.
+</div>
+
+      
+<!-- The Viewer will be instantiated here -->
+<script >localStorage.setItem('Autodesk.Viewing.Private.GuiViewer3D.SavedSettings.ghosting', false)</script>
+
+<!-- The Viewer JS -->
+<script src="https://developer.api.autodesk.com/modelderivative/v2/viewers/6.*/viewer3D.min.js"></script>
+
+  </body>
+
+  <!--Dist-->
+  <script type="module" src="/static/dist/js/configurator.bundle.js?v=1.7.0.2"></script>
+  <script type="text/javascript" src="/static/dist/js/lib/jquery-3.3.1.min.js?v=1.0"></script>
+  <script type="text/javascript" src="/static/dist/js/lib/jquery-ui.min.js?v=1.0" ></script>
+  <script type="text/javascript" src="/static/dist/js/lib/notify.js?v=1.0" ></script>
+  <script type="text/javascript" src="/static/dist/js/lib/shepherd.min.js?v=1.0" ></script>
+</html>
