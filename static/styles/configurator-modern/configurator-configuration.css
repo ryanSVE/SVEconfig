@@ -2,7 +2,7 @@
   right: 0px;
   top: 45vh;
   position: absolute;
-  background-image: url("/static/styles/configurator-modern/configuration-background.png");
+  background-image: url("/SVEconfig/static/styles/configurator-modern/configuration-background.png");
   background-size: cover;
   transition: linear all .5s;
   height: 62vh;
@@ -140,7 +140,7 @@ input {
   z-index: 99;
   width: 507px;
   height: 812px;
-  background-image: url(/static/styles/configurator-modern/configuration-background.png);
+  background-image: url(/SVEconfig/static/styles/configurator-modern/configuration-background.png);
   position: absolute;
 }
 .eto-links-content {

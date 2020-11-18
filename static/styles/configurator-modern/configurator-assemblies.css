@@ -2,7 +2,7 @@
   left: 0px;
   top: 45vh;
   position: absolute;
-  background-image: url("/static/styles/configurator-modern/assembly-selector-background.png");
+  background-image: url("/SVEconfig/static/styles/configurator-modern/assembly-selector-background.png");
   background-size: cover;
   background-position: right;
   transition: all .5s;
