@@ -10,13 +10,6 @@
   top: 30px;
   right: 20px;
 }
-#feedback-link {
-  position: absolute;
-  top: 50px;
-  right: 0px;
-  padding-right: 20px;
-  color: white;
-}
 #bannerLogo {
   position: relative;
   left: 0;
@@ -30,20 +23,6 @@
   position: absolute;
   top: 50vh;
   right: 50vw;
-}
-#login-container {
-  position: absolute;
-  right: 0;
-  top:10px;
-  padding-right: 20px;
-  text-align: right;
-  color: white;
-}
-#login-container > a:link {
-  color: white;
-}
-#login-container > a:visited {
-  color: white;
 }
 #banner {
   width: 100%;
