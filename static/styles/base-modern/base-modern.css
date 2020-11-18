@@ -13,10 +13,10 @@
 #bannerLogo {
   position: relative;
   left: 0;
-  top: -40px;
+  top: -5px;
   padding-left:5px;
-  height:105px;
-  width:284px;
+  height:84px;
+  width:227px;
 }
 #sve-loading {
   display:none;
