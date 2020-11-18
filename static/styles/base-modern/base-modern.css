@@ -6,9 +6,12 @@
   z-index: 4;
 }
 #banner-title {
-  position: absolute;
-  top: 30px;
-  right: 20px;
+    position: absolute;
+    top: 5;
+    right: 10;
+    font-size: x-large;
+    font-family: roboto;
+    font-weight: bold;
 }
 #bannerLogo {
     position: relative;
