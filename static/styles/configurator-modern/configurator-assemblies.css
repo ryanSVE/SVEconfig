@@ -31,6 +31,9 @@
 #assembly-selector-ui.collapsed {
   transform: translateX(-100%);
 }
+#assembly-selector-ui.collapsed >  img {
+  transform: rotate(180deg);
+}
 
 #assembly-container {
   margin: 10px;
@@ -49,3 +52,5 @@
 .assemblies:hover {
   color:black;
 }
+
+
